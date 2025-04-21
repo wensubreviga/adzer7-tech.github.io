@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies & Interests - Owen's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">TECHNOLOGIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'hobbies' %}">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Hobbies & Interests</h1>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="{% static 'images/sketching.jpg' %}" class="card-img-top" alt="Sketching">
+                        <div class="card-body">
+                            <h3 class="card-title">Sketching</h3>
+                            <p class="card-text">Creating expressive figure and anime art and sharing it online,showcasing visual concepts.</p>
+                            <div class="text-center">
+                                <a href="https://www.deviantart.com/aztec7702" target="_blank" class="btn btn-outline-primary">View Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="{% static 'images/animation.jpg' %}" class="card-img-top" alt="Animation">
+                        <div class="card-body">
+                            <h3 class="card-title">Animation</h3>
+                            <p class="card-text">Sharing captivating animated character-driven stories and designs across online platforms.</p>
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/share/v/15ZoEA1HwZ/" target="_blank" class="btn btn-outline-primary">Watch My Creation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="{% static 'images/coding.jpg' %}" class="card-img-top" alt="Code Programming">
+                        <div class="card-body">
+                            <h3 class="card-title">Code Programming</h3>
+                            <p class="card-text">Sharing my coding journey and project showcases via video, offering insights into web development.</p>
+                            <div class="text-center">
+                                <a href="https://youtu.be/O3D4sST9iKU" target="_blank" class="btn btn-outline-primary">Watch Tutorials</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills & Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                               <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                   <i class="fas fa-certificate me-2"></i>
+                                    Certificate of Figure & Anime Sketching Exploration
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-award me-2"></i>
+                                    Budding Cartoon Animator Certification
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-trophy me-2"></i>
+                                    Certificate of Continuous Web Development Learning & Integration
+                                </li>
+                                <li class="list-group-item">
+                                   <i class="fas fa-graduation-cap me-2"></i>
+                                    Emerging Digital Artistry Certification: Sketching & Motion Foundations
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Owen's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

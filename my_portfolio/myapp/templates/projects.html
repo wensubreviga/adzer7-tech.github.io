@@ -1,0 +1,85 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Owen's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">TECHNOLOGIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'projects' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'hobbies' %}">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="py-6 mt-6">
+        <div class="container">
+            <h1 class="text-center mb-4">My Projects</h1>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                 <img src="{% static 'images/tourist-website.jpg' %}" class="card-img-top" alt="Interactive Tourist Information Website for Santa Catalina">
+                   <div class="card-body">
+                   <h3 class="card-title">Interactive Tourist Information Website for Santa Catalina</h3>
+                  <p class="card-text">A website dedicated to showcasing the attractions, activities, local businesses (restaurants, accommodations, dive shops), and events in Santa Catalina.</p>
+               <div>
+            </div>
+        </div>
+        </div>
+           </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                    <img src="{% static 'images/recipe-app.jpg' %}" class="card-img-top" alt="Personalized Recipe Keeper and Easy Meal Planner">
+                     <div class="card-body">
+                    <h3 class="card-title">Personalized Recipe Keeper and Easy Meal Planner(Breakfast,Lunch,Dinner)</h3>
+                  <p class="card-text">A web application where users can save their favorite recipes, categorize them, and plan their meals for the week.</p>
+                <div>
+            </div>
+        </div>
+    </div>
+</div>
+   <div class="row justify-content-center">
+     <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'images/business-directory.jpg' %}" class="card-img-top" alt="Local Business Directory with Interactive Map and Filters">
+           <div class="card-body">
+             <h3 class="card-title">Local Business Directory with Interactive Map and Filters</h3>
+               <p class="card-text">A web directory showcasing local businesses in Santa Catalina (e.g., dive resorts, restaurants, guesthouses, tour operators, souvenir shops). The directory would feature an interactive map with business locations and filtering options to help users find what they need.</p>
+                <div>
+            </div>
+        </div>
+    </div>
+        </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="https://www.instagram.com/_johnsubreviga?igsh=cTZpNzM5NGdqbm5h" class="text-white me-3" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/owenjohn.subreviga" class="text-white me-3" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/JohnUtah460460?s=09" class="text-white me-3" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Owen's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
